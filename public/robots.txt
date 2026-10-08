@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wordezyladder.bgameworld.com/sitemap.xml
