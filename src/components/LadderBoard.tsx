@@ -274,10 +274,10 @@ export const LadderBoard: React.FC<Props> = ({ puzzle, words, hintAt, hints, act
                       aria-label={key === "BACKSPACE" ? "Delete letter" : key === "ENTER" ? "Enter word" : key}
                       className={`${wide ? "flex-[1.5] text-[10px]" : "flex-1 text-sm"} h-12 rounded-md font-semibold flex items-center justify-center transition-transform active:scale-90 disabled:opacity-60 ${
                         key === "ENTER"
-                          ? "bg-correct text-paper"
+                          ? "bg-correct text-white"
                           : inTarget
                           ? "bg-surface-high text-correct ring-1 ring-inset ring-correct-dim/60"
-                          : "bg-surface-high text-paper hover:bg-rule"
+                          : "bg-surface-high text-white hover:bg-rule"
                       }`}
                     >
                       {key === "BACKSPACE" ? <Delete className="w-4 h-4" /> : key === "ENTER" ? <CornerDownLeft className="w-4 h-4" /> : key}

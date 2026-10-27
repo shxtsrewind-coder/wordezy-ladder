@@ -382,7 +382,7 @@ export const GamePage: React.FC = () => {
           type="button"
           onClick={() => setMode("daily")}
           className={`px-4 py-1.5 rounded-md text-sm font-medium transition-colors ${
-            mode === "daily" ? "bg-correct text-paper" : "text-muted hover:text-paper"
+            mode === "daily" ? "bg-correct text-white" : "text-muted hover:text-white"
           }`}
         >
           Daily
@@ -395,7 +395,7 @@ export const GamePage: React.FC = () => {
             setMode("unlimited");
           }}
           className={`flex items-center gap-1.5 px-4 py-1.5 rounded-md text-sm font-medium transition-colors ${
-            mode === "unlimited" ? "bg-correct text-paper" : "text-muted hover:text-paper"
+            mode === "unlimited" ? "bg-correct text-white" : "text-muted hover:text-white"
           }`}
         >
           {!save.unlockedUnlimited && <Lock className="w-3.5 h-3.5" />}
@@ -447,7 +447,7 @@ export const GamePage: React.FC = () => {
             <button
               type="button"
               onClick={startDaily}
-              className="inline-flex items-center justify-center gap-2 w-full max-w-xs py-3 rounded-lg bg-correct hover:bg-correct-dim text-paper font-medium transition-colors"
+              className="inline-flex items-center justify-center gap-2 w-full max-w-xs py-3 rounded-lg bg-correct hover:bg-correct-dim text-white font-medium transition-colors"
             >
               <Play className="w-4 h-4" />
               Play — the clock starts now
@@ -502,7 +502,7 @@ export const GamePage: React.FC = () => {
             <button
               type="button"
               onClick={handleUnlock}
-              className="w-full py-2.5 px-4 rounded-md bg-correct hover:bg-correct-dim text-paper font-medium text-sm transition-colors"
+              className="w-full py-2.5 px-4 rounded-md bg-correct hover:bg-correct-dim text-white font-medium text-sm transition-colors"
             >
               Unlock for $2
             </button>
@@ -517,7 +517,7 @@ export const GamePage: React.FC = () => {
                 type="button"
                 onClick={() => pickLength(len)}
                 className={`px-3.5 py-1 rounded-md text-xs font-medium transition-colors ${
-                  uLength === len ? "bg-present text-ink" : "text-muted hover:text-paper"
+                  uLength === len ? "bg-present text-ink" : "text-muted hover:text-white"
                 }`}
               >
                 {len} letters
@@ -559,7 +559,7 @@ export const GamePage: React.FC = () => {
             <button
               type="button"
               onClick={() => newUnlimited()}
-              className="inline-flex items-center justify-center gap-2 w-full max-w-xs py-2.5 rounded-lg bg-correct hover:bg-correct-dim text-paper font-medium text-sm transition-colors"
+              className="inline-flex items-center justify-center gap-2 w-full max-w-xs py-2.5 rounded-lg bg-correct hover:bg-correct-dim text-white font-medium text-sm transition-colors"
             >
               <RefreshCw className="w-4 h-4" />
               New ladder
@@ -643,7 +643,7 @@ const DailyResult: React.FC<{
       <button
         type="button"
         onClick={onShare}
-        className="inline-flex items-center justify-center gap-2 w-full py-2.5 rounded-lg bg-correct hover:bg-correct-dim text-paper font-medium text-sm transition-colors"
+        className="inline-flex items-center justify-center gap-2 w-full py-2.5 rounded-lg bg-correct hover:bg-correct-dim text-white font-medium text-sm transition-colors"
       >
         {shareState === "copied" ? <Check className="w-4 h-4" /> : <Share2 className="w-4 h-4" />}
         {shareState === "copied" ? "Copied — paste it anywhere" : shareState === "failed" ? "Couldn't copy — try again" : "Share result"}
