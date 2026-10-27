@@ -277,7 +277,7 @@ export const LadderBoard: React.FC<Props> = ({ puzzle, words, hintAt, hints, act
                           ? "bg-correct text-white"
                           : inTarget
                           ? "bg-surface-high text-correct ring-1 ring-inset ring-correct-dim/60"
-                          : "bg-surface-high text-white hover:bg-rule"
+                          : "bg-surface-high text-paper hover:bg-rule"
                       }`}
                     >
                       {key === "BACKSPACE" ? <Delete className="w-4 h-4" /> : key === "ENTER" ? <CornerDownLeft className="w-4 h-4" /> : key}
